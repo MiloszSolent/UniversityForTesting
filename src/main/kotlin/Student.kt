@@ -14,7 +14,7 @@ class Student(val id: String, var name: String, var course: String, markIn: Int)
     override fun toString(): String {
         return "$name, ID $id, is on $course, mark is $mark which is a grade of ${getGrade()}"
     }
-
+    
     fun getGrade() : String {
         return when(mark) {
             in 70..100 -> "First"
